@@ -21,7 +21,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  input = gets.strip
+  input = gets.chomp
 end
 
 def end_game(card_total)
