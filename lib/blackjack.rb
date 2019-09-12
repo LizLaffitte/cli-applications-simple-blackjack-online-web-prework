@@ -60,13 +60,17 @@ def hit?(card_total)
 end
 
 
-#p hit?(7)
-
 
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
 
-#def runner
+def runner
   # code runner here
-#end
+  welcome
+  initial_round
+  hit?
+  display_card_total
+  end_game
+  
+end
