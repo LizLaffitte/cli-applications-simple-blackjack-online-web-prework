@@ -48,6 +48,7 @@ end
 def hit?(card_total)
   # code hit? here
   prompt_user
+  p card_total
   decision = get_user_input
   if decision == "s"
     return card_total
