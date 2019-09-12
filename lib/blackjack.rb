@@ -48,17 +48,14 @@ end
 def hit?(card_total)
   # code hit? here
   prompt_user
-  decision = nil
-  if decision == nil
-    decision = get_user_input
-    if decision == "s"
-      return card_total
-    elsif decision == "h"
-      card_total += deal_card
-    else 
-      invalid_command
-    end
-  end 
+  decision = get_user_input
+  if decision == "s"
+    return card_total
+  elsif decision == "h"
+    card_total += deal_card
+  else 
+    invalid_command
+  end
   return card_total
 end
 
