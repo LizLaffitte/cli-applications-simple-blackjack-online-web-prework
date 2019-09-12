@@ -41,6 +41,8 @@ end
 def invalid_command
   # code invalid_command here
   puts "Please enter a valid command"
+  prompt_user
+  get_user_input
 end
 
 def hit?(card_total)
@@ -51,7 +53,7 @@ def hit?(card_total)
     decision = get_user_input
     if decision == "s"
       return card_total
-    else if decision == "h"
+    elsif decision == "h"
       card_total += deal_card
     else 
       invalid_command
